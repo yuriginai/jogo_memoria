@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('imagens/background.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: rgb(126, 30, 216)
+}
+
+h2{
+    text-align: center;
+    color:rgb(114, 10, 212)
+}
+
+#user-input, #game-info {
+    margin-bottom: 20px;
+}
+
+.timer{
+    color: rgb(126, 30, 216)
+}
+
+.start-button{
+    border-radius: 5px;
+    background-color: rgb(126, 30, 216);
+    color: white;
+}
+
+.reset-button{
+    border-radius: 5px;
+    background-color: rgb(126, 30, 216);
+    color: white;
+}
+
+.ranking{
+    border-radius: 5px;
+    background-color: rgb(126, 30, 216);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    margin-top: 20px;
+}
+
+#game-container {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 10px;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(173, 105, 235);
+    border: 2px solid rgb(126, 30, 216);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    cursor: pointer;
+    position: relative;
+    perspective: 1000px;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.card.flipped .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card .card-front, .card .card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.card .card-front {
+    background-color: rgb(173, 105, 235);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotateY(0deg);
+}
+
+.card .card-back {
+    transform: rotateY(180deg);
+    background-size: cover;
+}
+
+.card.image1 .card-back { background-image: url('imagens/pato.jpg'); }
+.card.image2 .card-back { background-image: url('imagens/gato.jpg'); }
+.card.image3 .card-back { background-image: url('imagens/raposa.jpg'); }
+.card.image4 .card-back { background-image: url('imagens/vaca.jpg'); }
+.card.image5 .card-back { background-image: url('imagens/coelho.jpg'); }
+.card.image6 .card-back { background-image: url('imagens/panda.jpg'); }
+.card.image7 .card-back { background-image: url('imagens/porco.jpg'); }
+.card.image8 .card-back { background-image: url('imagens/fantasma.jpg'); }
+
+#message {
+    margin-top: 20px;
+    font-size: 1.5em;
+    background-color: rgb(126, 30, 216);
+    border-radius: 5px;
+    color: white;
+}
+
+#ranking-list {
+    list-style: none;
+    padding: 0;
+}
+

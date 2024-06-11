@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Memória</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Jogo da Memória</h1>
+    <br>
+    <div id="user-input">
+        <input type="text" id="username" placeholder="Digite seu nome">
+        <button id="start-button" class="start-button">Iniciar Jogo</button>
+    </div>
+    <div id="game-info">
+        <div id="timer" class="timer">Tempo: 0s</div>
+        
+    </div>
+    <div id="message"></div>
+    <br>
+    <div id="game-container"></div>
+    <div id="ranking">
+        <br>
+        <h2>Ranking</h2>
+        <ol id="ranking-list" class="ranking"></ol>
+    </div>
+    <script src="script.js"></script>
+    <br>
+    <button id="reset-button" class="reset-button">Reiniciar Jogo</button>
+</body>
+</html>
