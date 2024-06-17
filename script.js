@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 900);
     }
 
-    // Função para virar todas as cartas (usada na tecla 'G')
+    // Função para virar todas as cartas (usada na tecla 'H')
     function flipAllCards(){
         const cards = document.querySelectorAll('.card');
         cards.forEach(card => card.classList.add('flipped'));
@@ -167,9 +167,9 @@ document.addEventListener('DOMContentLoaded', () => {
         updateRankings(usernameInput.value, time);
     }
 
-    // Evento de teclado para pressionar 'G' e vencer o jogo instantaneamente
+    // Evento de teclado para pressionar 'H' e vencer o jogo instantaneamente
     document.addEventListener('keydown', (event) => {
-        if (event.key === 'g' || event.key === 'G') {
+        if (event.key === 'h' || event.key === 'H') {
             if (usernameInput.value.trim() !== '') {
                 endGame();
                 flipAllCards();

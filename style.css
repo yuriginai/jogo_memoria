@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Roboto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,7 +21,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(114, 10, 212);
+    background-color: rgba(114, 10, 212, 0.807);
     border-radius: 10px;
     margin-bottom: 20px;
     color: white;
@@ -32,7 +32,7 @@ h2{
     border-radius: 5px;
     width: 120px;
     height: 30px;
-    background-color: rgb(114, 10, 212);
+    background-color: rgb(114, 10, 212, 0.807);
     text-align: center;
     color:rgb(255, 255, 255);
 }
@@ -48,25 +48,25 @@ h2{
     height: 15px;
     font-style: oblique;
     text-align: center;
-    background-color: rgb(114, 10, 212);
+    background-color: rgb(114, 10, 212, 0.807);
     color: white;
 }
 
 .start-button{
     border-radius: 5px;
-    background-color: rgb(126, 30, 216);
+    background-color: rgb(126, 30, 216, 0.807);
     color: white;
 }
 
 .reset-button{
     border-radius: 5px;
-    background-color: rgb(126, 30, 216);
+    background-color: rgb(126, 30, 216, 0.807);
     color: white;
 }
 
 .ranking{
     border-radius: 5px;
-    background-color: rgb(126, 30, 216);
+    background-color: rgb(126, 30, 216, 0.807);
     color: white;
     padding: 20px;
     text-align: center;
@@ -84,7 +84,7 @@ h2{
     width: 100px;
     height: 100px;
     background-color: rgb(173, 105, 235);
-    border: 2px solid rgb(126, 30, 216);
+    border: 2px solid rgb(126, 30, 216, 0.807);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -139,7 +139,7 @@ h2{
 #message {
     margin-top: 20px;
     font-size: 1.5em;
-    background-color: rgb(126, 30, 216);
+    background-color: rgb(126, 30, 216, 0.807);
     border-radius: 5px;
     color: white;
 }
@@ -149,10 +149,3 @@ h2{
     padding: 0;
 }
 
-footer{
-    width: 100%;
-    background-color: rgb(114, 10, 212);
-    padding: 15px 0;
-    position: absolute;
-    bottom: 0;
-}
